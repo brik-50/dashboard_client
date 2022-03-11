@@ -10,7 +10,7 @@ var t_todo=[];
 add.addEventListener("click" , function add(){
     
     list.innerHTML += `
-            <div class="parent d-flex justify-content-between mx-6">
+            <div class="parent d-flex justify-content-between mx-2">
             <div class="p-2 task ">
             <span id="matiere_name" class="">
                ${todo.value}
@@ -21,7 +21,7 @@ add.addEventListener("click" , function add(){
                 <label for=origine">origine de matiére</label>
             <input type="text" name="origine" id="origine" required>
             </div>
-            <button class="delete m-2">
+            <button class="delete m-2" style="border-style: none; background-color : #fff;">
             <i id="icon" class="fas fa-trash"></i>
             </button>
         </div>
