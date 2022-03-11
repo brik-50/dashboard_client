@@ -18,7 +18,7 @@
   <!-- Page plugins -->
   <!-- Argon CSS -->
   <link rel="stylesheet" href="../assets/css/argon.css?v=1.2.0" type="text/css">
-  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/mystyle.css">
 
 </head>
 
@@ -299,21 +299,23 @@
         </div>
 
       </div>
-        
         <div class=" row form-group ml-1">
           <label for="image">image</label>
-          <input type="file" class="form-control mr-3"  style="font-size: medium;color: rgb(49, 48, 48); " name="image" />
+          <input type="file" class="form-control mr-3" style="font-size: medium;color: rgb(68, 67, 67); " name="image" />
         </div>
-        
-      <div class="row form-group px-3">
-        <label  class="form-control-label" for="matiere">matiére premiére</label>
-        <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1" name="matiere">
-        <span class="input-group-text" id="basic-addon1"><i class="fas fa-plus-circle"></i></span>
-    </div>
-    <div class="row form-group px-3">
+        <label class="form-control-label" for="matiere">matiéres premiéres</label>
+        <div class="input-group mb-3 ">
+          <input type="text" class="form-control"  aria-label="Username" aria-describedby="basic-addon1" id="todo">
+          <span class="input-group-text" id="basic-addon1" style="font-size: medium; color: rgb(66, 65, 65);" ><i class="fas fa-plus-circle"></i></span>
+          
+        </div>
+        <div id="list" class="">
+          
+        </div>
+        <div class="row form-group px-3">
           <label for="prix" class="form-control-label">prix/hour</label>
-          <input class="form-control" style="font-size: medium; color: rgb(49, 48, 48); " type="number" min="0"  placeholder="25$" name="prix"  required>
-      </div>
+          <input class="form-control" style="font-size: medium; color: rgb(68, 67, 67); " type="number" min="0" placeholder="25$" name="prix" required>
+        </div>
       <div class="row form-group px-3">
         <label for="bio" class="form-control-label">Description d'offre</label>
         <textarea class="form-control" style="color: rgb(49, 48, 48);" rows="3" name="bio" ></textarea>
@@ -354,5 +356,6 @@
   <script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
   <!-- Argon JS -->
   <script src="../assets/js/argon.js?v=1.2.0"></script>
+  <script src="../assets/js/add_prod.js"></script>
 </body>
 </html>
